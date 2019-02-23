@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+<web-app id="WebApp_ID">
+	<display-name>GreezlyStore</display-name>
+	<servlet>
+		<servlet-name>adminlogin</servlet-name>
+		<display-name>adminlogin</display-name>
+		<description></description>
+		<servlet-class>com.cognizant.servlet.adminlogin</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<display-name>LogoutServlet</display-name>
+		<description></description>
+		<servlet-class>com.cognizant.servlet.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AddProductServlet</servlet-name>
+		<display-name>AddProductServlet</display-name>
+		<description></description>
+		<servlet-class>com.cognizant.servlet.AddProductServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminlogin</servlet-name>
+		<url-pattern>/adminlogin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddProductServlet</servlet-name>
+		<url-pattern>/addproduct</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
